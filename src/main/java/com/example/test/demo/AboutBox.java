@@ -77,7 +77,7 @@ public class AboutBox {
         long totalMem = Runtime.getRuntime().maxMemory();
         long usedMem = totalMem - freeMem;
         usedMem /= 1024.0;
-        String MBMemStr = NumberFormat.getNumberInstance(Locale.US).format(usedMem / 1024);
+        /*~~>*/String MBMemStr = NumberFormat.getNumberInstance(Locale.US).format(usedMem / 1024);
         Label MemUsage = new Label("Mem usage (MB) - " + MBMemStr);
 
         int newBottom = 1;
@@ -143,13 +143,13 @@ public class AboutBox {
         int appWidth = (int) visualBounds.getWidth();
         int appHeight = (int) visualBounds.getHeight();
 
-        String rtv = System.getProperty("java.runtime.version");
+        /*~~>*/String rtv = System.getProperty("java.runtime.version");
         if (null == rtv) {
             rtv = "1.1.0_11-b32"; // bogus one - should NEVER happen
         }
 
         lblTabCount = new Label("Number of Tabs: " + "3");
-        String scalingString = "Scaling: ";
+        /*~~>*/String scalingString = "Scaling: ";
         lblScaling = new Label(scalingString);
 
         lblAppDimensions = new Label("Screen Size: " + Integer.toString(appWidth) + "x" + Integer.toString(appHeight));
