@@ -1,4 +1,4 @@
-package com.Example.Demo;
+package com.example.demo;
 
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
@@ -31,7 +31,7 @@ public class DemoApplication {
 		String artifactoryUrl = "https://artifactory.moderne.ninja/artifactory";
 		String username = System.getenv("ARTIFACTORY_USER");
 		String password = System.getenv("ARTIFACTORY_PASSWORD");
-		String repo = System.getenv("ARTIFACTORY_REPO");
+		String repo = System.getenv("FOOO");
 
 		WebClient.Builder webClientBuilder = WebClient.builder();
 
