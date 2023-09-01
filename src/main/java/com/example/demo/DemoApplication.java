@@ -1,4 +1,4 @@
-package com.Example.Demo;
+package com.example.demo;
 
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
